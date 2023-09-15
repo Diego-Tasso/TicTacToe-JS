@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #878791;
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    background-image: url('background.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover; /* Torna a imagem de fundo responsiva */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inside {
+    border: 4px solid #878791;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    font-size: 40px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: #161616;
+    border: none;
+}
+
+.currentPlayer {
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+}
+
+.game h2 {
+    color: #fff;
+}
+
+.linhaDaVitoria {
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: #00ff00;
+    transition: width 1s ease;
+    transform-origin: left center;
+}
